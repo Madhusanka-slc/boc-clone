@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #outter{
+            position: relative;
+            background-color: yellow;
+            /* overflow: hidden; */
+
+        }
+        /* #abc{
+            clear: both;
+        } */
+
+        /* #outter::after{
+            display: block;
+            content: "";
+            clear: both;
+        } */
+
+        .clear-fix::after{
+            display: block;
+            content: "";
+            clear: both;
+        }
+
+        #inner{
+
+            float: left;
+            /* position: absolute; */
+            background-color: red;
+            height: 250px;
+            width: 250px;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="test3.html">test3</a>
+
+    <div id="outter" class="clear-fix">
+        <!-- before -->
+        <div id="inner"></div>
+        <!-- after -->
+        <!-- <div id="abc"></div> -->
+    </div>
+    
+</body>
+</html>
