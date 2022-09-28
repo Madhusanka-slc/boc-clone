@@ -161,8 +161,16 @@ h6{
 #main-nav ul li{
     float: left;
     padding: 0 15px 0 15px;
+  
 
    
+}
+#main-nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+#main-nav ul li a:hover{
+    text-decoration: underline;
 }
 /* --------------------------------------------------- */
 
@@ -225,6 +233,8 @@ h6{
     padding: 15px;
     display: inline-block; /* inline-block application */
     position: relative;
+    
+
 
 }
 
@@ -641,7 +651,7 @@ main .row:first-child .container .col:first-child ul li h3{
 /*  row 2 */
 main .row:nth-child(2) .container .col:first-child{
     width: 75%;
-    background-color: #57a0d7;
+    /* background-color: #57a0d7; */
     float: left;
   
 }
@@ -706,3 +716,318 @@ main> .row:nth-child(2) .container .col:last-child>ul>li>a>div{
 main> .row:nth-child(2) .container .col:last-child>ul>li>a>div:first-child{
     width: 90%;
 }
+
+main> .row:nth-child(2) .container .col:first-child img{
+    width: 100%;
+}
+
+
+#slider{
+
+
+    position: relative;
+    margin-top: 20px;
+    padding: 0 10px;
+    height: 388px;
+    overflow: hidden;
+    /* overflow-x: scroll; */
+    scroll-behavior: smooth;
+    /* display: inline-block;
+    /* margin-top: ; */
+    /* padding: 10px 10px 0;
+    height: 388px; */
+    /* overflow-y: hidden; */
+    /* white-space : nowrap;
+    overflow-x: hidden;
+    width: 850px; */
+
+    scroll-snap-type: x mandatory;
+
+  
+}
+
+.slide{
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 388px;
+    background-size: contain;
+    background-position: center;
+    /* float: left; */
+    width: 100%;
+
+    /* display: inline-block; */
+
+    scroll-snap-align: center;
+ 
+  
+}
+
+.slide .prev, .slide .next{
+    position: absolute;
+    /* display: block; */
+    width: 30px;
+    height: 30px;
+    background-color: rgba(128 , 130, 133, 0.9);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 100%;
+
+
+}
+
+.slide .prev:hover, .slide .next:hover{
+    background-color: rgba(128 , 130, 133, 0.8);
+}
+.slide .prev{
+    left:  10px;
+}
+
+.slide .next{
+    right: 10px;
+}
+
+.slide ion-icon{
+  color: white;
+  vertical-align: sub;
+}
+
+#slide1{
+   
+
+    background-image: url('https://boc.lk/image/data/Banner/power-branch-close-2022-En-1.jpg');
+}
+
+#slide2{
+    left: 100%;
+
+
+    background-image: url('https://boc.lk/image/data/Banner/Top1000_2022-En_1.jpg');
+}
+#slide3{
+    left: 200%;
+ 
+
+    background-image: url('https://boc.lk/image/data/Banner/Pita-pita_season-3-2022-E.jpg');
+}
+#slide4{
+    left: 300%;
+
+
+  
+  
+
+    background-image: url('https://boc.lk/image/data/Banner/200Day_investment-2022-Sept-Web.jpg');
+}
+#slide5{
+    left: 400%;
+   
+ 
+   
+    background-image: url('https://boc.lk/image/data/Banner/SDA-2022-09.jpeg');
+}
+
+
+#slide6{
+    left: 500%;
+  
+
+    background-image: url('https://boc.lk/image/data/Banner/green-loan-2022.jpeg');
+}
+
+#slider-wrapper{
+    width: 100%;
+    position: relative;
+    animation-name: slider-animation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes slider-animation{
+    0%, 10%{
+        left: 0;
+    }
+
+    16%, 26%{
+        left: -100%;
+    }
+
+    32%, 58%{
+        left: -200%;
+    }
+    64%, 76%{
+        left: -300%;
+    }
+
+    82%, 94%{
+        left: -400%;
+    }
+
+    100%{
+        left: -500%;
+    }
+   
+
+}
+
+main .row:nth-child(3){
+    padding: 20px 0;
+
+}
+
+
+main .row:nth-child(3) .container .col{
+    /* height: 250px; */
+    width: 25%;
+    float: left;
+    padding: 0 10px;
+    background-clip: content-box;
+    overflow: hidden;
+}
+
+
+main .row:nth-child(3) .container .col:nth-child(1){
+    background-color: #107ece;
+    /* float: left; */
+
+}
+main .row:nth-child(3) .container .col:nth-child(2){
+    background-color: #d74527;
+    /* float: left; */
+    
+}
+
+main .row:nth-child(3) .container .col:nth-child(3){
+    background-color: #ff9d1e;
+    /* float: right; */
+
+}
+main .row:nth-child(3) .container .col:nth-child(4){
+    background-color: blueviolet;
+    /* float: right; */
+    
+}
+
+main .row:nth-child(3) .container .col img{
+    width: 100%;
+    display: block;
+    transition: transform 500ms;
+}
+
+main .row:nth-child(3) .container .col .topic{
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: #515152;
+    z-index: 1;
+}
+
+main .row:nth-child(3) .container .col:hover img{
+    transform: scale(1.3);
+   
+} 
+
+main .row:nth-child(3) .container .col:hover .overlay{
+    display: block;
+}
+
+
+main .row:nth-child(3) .container .col .wrapper{
+    overflow: hidden;
+    position: relative;
+}
+
+main .row:nth-child(3) .container .col .wrapper .overlay{
+    /* display: ; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7)
+  
+}
+
+
+main .row:nth-child(3) .container .col:hover .topic{
+    background-color: #ffde00;
+    color: black;
+}
+
+
+
+
+/* ------------------------------- */
+
+main .row:nth-child(4) .container .col{
+    float: left;
+}
+main .row:nth-child(4) .container .col:first-child{
+    width: 25%;
+    /* background-color: #107ece; */
+    vertical-align: center;
+    text-align: right;
+    padding: 10px;
+
+}
+
+main .row:nth-child(4) .container .col:nth-child(2){
+    width: 50%;
+    /* background-color: #ff9d1e; */
+
+    vertical-align: center;
+    text-align: center;
+    padding-top: 13px;
+
+
+
+   
+}
+
+main .row:nth-child(4) .container .col:last-child{
+    width: 25%;
+    /* background-color: chartreuse; */
+    vertical-align: center;
+    text-align: right;
+    padding: 10px;
+
+}
+main .row:nth-child(4) {
+    padding-bottom: 20px;
+}
+
+
+main .row:nth-child(4) .container .col:nth-child(1) p:first-child{
+    padding-bottom: 15px;
+    font-size: 18px;
+
+}
+
+main .row:nth-child(4) .container .col:first-child p:last-child{
+    font-size: 20px;
+    padding-left: 5px;
+}
+main .row:nth-child(4) .container .col:first-child ion-icon{
+padding-right: 15px;
+outline: none;
+color: #515254;
+}
+
+main .row:nth-child(4) .container .col:last-child p:first-child{
+    font-size: 20px;
+   
+  
+}
+
+main .row:nth-child(4) .container .col:last-child p:last-child{
+    font-size: 0.7rem;
+    padding: 2px;
+    color:  #515254;
+  
+}
+
