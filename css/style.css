@@ -634,3 +634,75 @@ main .row:first-child .container .col:first-child ul li .country-code{
 main .row:first-child .container .col:first-child ul li h3{
     font-size: 18px;
 }
+
+
+
+
+/*  row 2 */
+main .row:nth-child(2) .container .col:first-child{
+    width: 75%;
+    background-color: #57a0d7;
+    float: left;
+  
+}
+
+main .row:nth-child(2)  .container .col:last-child{
+    width: 25%;
+    /* background-color: #6cd757; */
+    float: right;
+ 
+}
+main .row:nth-child(2)  .container {
+    /* background-color: #0f027b; */
+    padding-top: 20px;
+}
+/* ------ */
+
+/* 
+main> .row:nth-child(2) .container .col:last-child{
+    height: 30px;
+} */
+
+main> .row:nth-child(2) .container .col:last-child>ul>li svg{
+    height: 30px;
+}
+main> .row:nth-child(2) .container .col:last-child>ul>li{
+    display: table;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+
+}
+main> .row:nth-child(2) .container .col:last-child>ul{
+    border-top: 1px solid #ececec;
+}
+
+main> .row:nth-child(2) .container .col:last-child>ul>li:hover{
+    background-color:#525252;
+    color: #ff9d1e;
+}
+
+main> .row:nth-child(2) .container .col:last-child>ul>li>a{
+    display: table-row; /* cannot padding */
+    text-decoration: none;
+    color: black;
+}
+
+main> .row:nth-child(2) .container .col:last-child>ul>li:hover a,
+main> .row:nth-child(2) .container .col:last-child>ul>li:hover svg{
+    color: #ff9d1e;
+    fill: #ff9d1e;
+
+}
+main> .row:nth-child(2) .container .col:last-child>ul>li>a>div{
+    display: table-cell;
+    padding: 10px 10px 10px 20px;
+    /* border: 2px solid black; */
+    vertical-align: middle;
+    line-height: 1.1rem;
+}
+
+main> .row:nth-child(2) .container .col:last-child>ul>li>a>div:first-child{
+    width: 90%;
+}
